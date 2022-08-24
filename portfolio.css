@@ -1,0 +1,99 @@
+#portfolio {
+    min-height: 100vh;
+    height: auto;
+    background-color: #fdfdfd;
+    margin-top: 100px;
+}
+
+#portfolio h1 {
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background: linear-gradient(90deg, rgba(0, 105, 255, 1) 0%, rgba(9, 52, 179, 1) 67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    /*text-shadow: 0px 2px 5px rgb(9, 52, 179, 1);*/
+}
+
+
+/* Gallery top */
+
+.hover {
+    margin: 4px;
+    margin-top: 34px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+}
+
+.hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+}
+
+.hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.hover-content {
+    position: relative;
+    z-index: 99;
+}
+
+
+/* Gallery 1  */
+
+.hover-1 img {
+    width: 105%;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    transition: all 0.3s;
+}
+
+.hover-1-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 0.4s;
+}
+
+.hover-1 .hover-overlay {
+    background: rgba(9, 52, 179, 0.35);
+
+}
+
+.hover-1-description {
+    transform: translateY(0.5rem);
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.hover-1:hover .hover-1-content {
+    bottom: 2rem;
+}
+
+.hover-1:hover .hover-1-description {
+    opacity: 1;
+    transform: none;
+}
+
+.hover-1:hover img {
+    left: 0;
+}
+
+.hover-1:hover .hover-overlay {
+    opacity: 0;
+}
